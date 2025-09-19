@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kho hàng & Danh mục</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+<body data-page="inventory">
+    <header class="site-header">
+        <div class="container nav">
+            <a class="brand" href="./index.html"><i class="fa-solid fa-recycle"></i> ReConcrete</a>
+            <nav class="menu">
+                <a class="active" href="./inventory.html"><i class="fa-solid fa-warehouse"></i> Kho & Danh mục</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1>Kho & Danh mục</h1>
+        <div class="summary">
+            <div class="summary-card"><i class="fa-solid fa-circle"></i> Trụ dài: <span id="qty-long"></span></div>
+            <div class="summary-card"><i class="fa-regular fa-circle"></i> Trụ ngắn: <span id="qty-short"></span></div>
+            <div class="summary-card"><i class="fa-solid fa-square"></i> Hình hộp: <span id="qty-box"></span></div>
+            <div class="summary-card"><i class="fa-solid fa-palette"></i> Thiết kế: <span id="qty-design"></span></div>
+        </div>
+
+        <div class="toolbar">
+            <input id="search" type="text" placeholder="Tìm kiếm... (tên, mã, chứng nhận)" />
+            <select id="typeFilter">
+                <option value="all">Tất cả</option>
+                <option value="sample">Bê tông mẫu</option>
+                <option value="design">Thiết kế</option>
+            </select>
+        </div>
+
+        <section>
+            <div id="grid" class="grid"></div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>© 2025 ReConcrete</p>
+        </div>
+    </footer>
+
+    <script src="./assets/js/data.js"></script>
+    <script src="./assets/js/app.js"></script>
+    <script>window.initInventory && window.initInventory();</script>
+</body>
+</html>
+
+

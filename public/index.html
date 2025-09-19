@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dự án tái sử dụng bê tông mẫu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-omW8aZPNgZp6i7i2q2uX3m7gY8vJ8Qp7q0m4bD9m3mB2Hq3o3xQqvZf9H7O3w+JtGQvO2Wl0bq0N3z1JbawYwQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8kXY8DbJyq+bkt2vqhvjK7J8jX0Fz+/i1VdawhAfBvzJoAFXKivW5OFo9/dH4gC9VHQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+<body data-page="home">
+    <header class="site-header">
+        <div class="container nav">
+            <a class="brand" href="./index.html"><i class="fa-solid fa-recycle"></i> ReConcrete</a>
+            <div class="menu-toggle" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="menu">
+                <a href="#about"><i class="fa-solid fa-circle-info"></i> Về chúng tôi</a>
+                <a href="./inventory.html"><i class="fa-solid fa-warehouse"></i> Kho & Danh mục</a>
+                <a href="#lien-he"><i class="fa-solid fa-envelope"></i> Liên hệ</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-bg">
+                <img src="../img/6.jpg" alt="Construction site" class="hero-bg-img">
+                <div class="hero-overlay"></div>
+                <div id="particles-js"></div>
+            </div>
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text" data-aos="fade-right" data-aos-duration="1000">
+                        <h1>Giải pháp tái sử dụng bê tông mẫu cho công trình xanh</h1>
+                        <p class="hero-subtitle">
+                            Biến bê tông mẫu sau kiểm định thành vật liệu hữu ích cho gia cố mái dốc, 
+                            bờ kênh, chống xói và gia cố nền đất yếu. Giải pháp bền vững, tiết kiệm chi phí.
+                        </p>
+                        <div class="hero-actions">
+                            <a class="btn primary large" href="./inventory.html" data-aos="zoom-in" data-aos-delay="300">
+                                <i class="fa-solid fa-store"></i> Khám phá kho hàng
+                            </a>
+                            <a class="btn secondary large" href="#lien-he" data-aos="zoom-in" data-aos-delay="500">
+                                <i class="fa-solid fa-phone"></i> Liên hệ ngay
+                            </a>
+                        </div>
+                        <div class="hero-stats" data-aos="fade-up" data-aos-delay="700">
+                            <div class="stat">
+                                <span class="stat-number" data-count="500">0</span>
+                                <span class="stat-label">Mẫu bê tông</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number" data-count="3">0</span>
+                                <span class="stat-label">Kho hàng</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">100%</span>
+                                <span class="stat-label">Chất lượng</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-visual" data-aos="fade-left" data-aos-duration="1000">
+                        <div class="hero-card">
+                            <div class="hero-icon-container">
+                                <i class="fa-solid fa-recycle hero-icon"></i>
+                                <div class="icon-pulse"></div>
+                            </div>
+                            <h3>Vòng đời mới</h3>
+                            <p>Bê tông mẫu → Vật liệu xây dựng</p>
+                            <div class="hero-features">
+                                <div class="feature-item">
+                                    <i class="fa-solid fa-check"></i>
+                                    <span>Thân thiện môi trường</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fa-solid fa-check"></i>
+                                    <span>Tiết kiệm chi phí</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2>Dịch vụ của chúng tôi</h2>
+                    <p>Giải pháp toàn diện cho việc tái sử dụng bê tông mẫu</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="service-image">
+                            <img src="../img/1.png" alt="Thu mua bê tông mẫu">
+                            <div class="service-overlay">
+                                <i class="fa-solid fa-recycle"></i>
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <h3><i class="fa-solid fa-recycle"></i> Thu mua bê tông mẫu</h3>
+                            <p>Nhận thu lại bê tông mẫu đã qua kiểm định từ các công trình xây dựng</p>
+                            <ul>
+                                <li><i class="fa-solid fa-leaf"></i> Trụ dài D150x300mm</li>
+                                <li><i class="fa-solid fa-leaf"></i> Trụ ngắn D100x150mm</li>
+                                <li><i class="fa-solid fa-leaf"></i> Khối hộp 150x150x300mm</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="service-image">
+                            <img src="../img/2.png" alt="Cung cấp vật liệu">
+                            <div class="service-overlay">
+                                <i class="fa-solid fa-truck"></i>
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <h3><i class="fa-solid fa-truck-fast"></i> Cung cấp vật liệu</h3>
+                            <p>Cung cấp bê tông mẫu đã qua sử dụng cho các công trình xanh</p>
+                            <ul>
+                                <li><i class="fa-solid fa-mountain"></i> Gia cố mái dốc</li>
+                                <li><i class="fa-solid fa-water"></i> Chống xói bờ kênh</li>
+                                <li><i class="fa-solid fa-layer-group"></i> Gia cố nền đất yếu</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="service-image">
+                            <img src="../img/3.png" alt="Thiết kế giải pháp">
+                            <div class="service-overlay">
+                                <i class="fa-solid fa-palette"></i>
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <h3><i class="fa-solid fa-drafting-compass"></i> Thiết kế giải pháp</h3>
+                            <p>Thiết kế và tư vấn giải pháp sử dụng bê tông mẫu tái chế</p>
+                            <ul>
+                                <li><i class="fa-solid fa-draw-polygon"></i> Thiết kế gia cố mái dốc</li>
+                                <li><i class="fa-solid fa-project-diagram"></i> Thiết kế bờ kênh chống xói</li>
+                                <li><i class="fa-solid fa-user-cog"></i> Tư vấn kỹ thuật</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits Section -->
+        <section class="benefits">
+            <div class="container">
+                <div class="benefits-content">
+                    <div class="benefits-text">
+                        <h2>Tại sao chọn chúng tôi?</h2>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <i class="fa-solid fa-globe"></i>
+                            </div>
+                            <div class="benefit-content">
+                                <h3>Bền vững môi trường</h3>
+                                <p>Góp phần giảm thiểu chất thải xây dựng, hướng tới mục tiêu NET0 và kinh doanh bền vững</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <i class="fa-solid fa-chart-line"></i>
+                            </div>
+                            <div class="benefit-content">
+                                <h3>Kinh tế tuần hoàn</h3>
+                                <p>Tận dụng nguồn mẫu có sẵn, giảm 30-50% chi phí nguyên liệu và tạo chuỗi giá trị bền vững</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <i class="fa-solid fa-certificate"></i>
+                            </div>
+                            <div class="benefit-content">
+                                <h3>Chứng nhận xanh</h3>
+                                <p>Bê tông mẫu đã qua kiểm định chất lượng, có chứng nhận môi trường và tiêu chuẩn xanh</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="benefits-visual">
+                        <div class="benefit-card">
+                            <h4>Quy trình hoạt động</h4>
+                            <div class="process-step">
+                                <span class="step-number">1</span>
+                                <span>Thu mua bê tông mẫu</span>
+                            </div>
+                            <div class="process-step">
+                                <span class="step-number">2</span>
+                                <span>Phân loại và kiểm tra</span>
+                            </div>
+                            <div class="process-step">
+                                <span class="step-number">3</span>
+                                <span>Cung cấp cho công trình</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Market Opportunity Section -->
+        <section class="market-opportunity section">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2>Cơ hội thị trường</h2>
+                    <p>Nhu cầu tăng mạnh nhờ biến đổi khí hậu, chính sách xanh và lợi ích kinh tế</p>
+                </div>
+                <div class="market-op" data-aos="fade-up" data-aos-delay="100">
+                    <div class="market-insight">
+                        <div class="insight-visual">
+                            <img src="../img/6.jpg" alt="Market landscape">
+                            <div class="insight-badges">
+                                <span class="badge primary"><i class="fa-solid fa-arrow-trend-up"></i> Nhu cầu tăng</span>
+                                <span class="badge secondary"><i class="fa-solid fa-leaf"></i> Chính sách xanh</span>
+                            </div>
+                        </div>
+                        <div class="insight-content">
+                            <h3>Bối cảnh & Động lực</h3>
+                            <p>Gia tăng hiện tượng xói lở, mưa cực đoan và sụt lún nền dẫn tới nhu cầu lớn về gia cố hạ tầng. Chính sách NET0 thúc đẩy giải pháp tái sử dụng vật liệu.</p>
+                            <ul class="trend-list">
+                                <li><i class="fa-solid fa-check"></i> Xói mòn bờ kênh gia tăng ở vùng ĐBSCL</li>
+                                <li><i class="fa-solid fa-check"></i> Ưu tiên vật liệu xanh, giảm phát thải</li>
+                                <li><i class="fa-solid fa-check"></i> Tối ưu chi phí OPEX/CAPEX cho chủ đầu tư</li>
+                            </ul>
+                            <div class="policy-chips">
+                                <span class="policy-badge"><i class="fa-solid fa-scale-balanced"></i> Ưu đãi thuế xanh</span>
+                                <span class="policy-badge"><i class="fa-solid fa-hand-holding-heart"></i> Hỗ trợ dự án bền vững</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="market-kpis">
+                        <div class="kpi-cards">
+                            <div class="kpi">
+                                <div class="kpi-top">
+                                    <i class="fa-solid fa-temperature-high"></i>
+                                    <span class="kpi-label">Khí hậu</span>
+                                </div>
+                                <div class="kpi-value">+28%</div>
+                                <div class="kpi-desc">Tần suất sự kiện cực đoan 5 năm</div>
+                            </div>
+                            <div class="kpi">
+                                <div class="kpi-top">
+                                    <i class="fa-solid fa-recycle"></i>
+                                    <span class="kpi-label">Tái sử dụng</span>
+                                </div>
+                                <div class="kpi-value">-35%</div>
+                                <div class="kpi-desc">Giảm chi phí vật liệu trung bình</div>
+                            </div>
+                            <div class="kpi">
+                                <div class="kpi-top">
+                                    <i class="fa-solid fa-shield-halved"></i>
+                                    <span class="kpi-label">Rủi ro</span>
+                                </div>
+                                <div class="kpi-value">-20%</div>
+                                <div class="kpi-desc">Giảm rủi ro hư hại theo năm</div>
+                            </div>
+                            <div class="kpi">
+                                <div class="kpi-top">
+                                    <i class="fa-solid fa-leaf"></i>
+                                    <span class="kpi-label">Phát thải</span>
+                                </div>
+                                <div class="kpi-value">-42%</div>
+                                <div class="kpi-desc">Giảm CO₂ so với vật liệu mới</div>
+                            </div>
+                        </div>
+                        <div class="tam-sam-som">
+                            <h4>Quy mô thị trường</h4>
+                            <div class="bars">
+                                <div class="bar tam" style="--width: 100%"><span>TAM</span><strong>100%</strong></div>
+                                <div class="bar sam" style="--width: 55%"><span>SAM</span><strong>55%</strong></div>
+                                <div class="bar som" style="--width: 18%"><span>SOM (3 năm)</span><strong>18%</strong></div>
+                            </div>
+                            <p class="note">Số liệu minh hoạ cho prototype. Thực tế sẽ cập nhật theo nghiên cứu thị trường.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us / Ý tưởng & Tính khả thi -->
+        <section id="about" class="about section">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2>Về chúng tôi</h2>
+                    <p>Tiên phong tái sử dụng bê tông mẫu cho hạ tầng bền vững – xanh, hiệu quả, tiết kiệm</p>
+                </div>
+                <div class="about-grid">
+                    <!-- Left: Hero Narrative -->
+                    <div class="about-hero" data-aos="fade-right">
+                        <div class="about-hero-media">
+                            <img src="../img/6.jpg" alt="ReConcrete – Sustainable Infrastructure">
+                            <div class="about-badges">
+                                <span class="badge primary"><i class="fa-solid fa-recycle"></i> Circular Economy</span>
+                                <span class="badge secondary"><i class="fa-solid fa-shield-heart"></i> Quality Certified</span>
+                            </div>
+                        </div>
+                        <div class="about-hero-body">
+                            <h3>Giải pháp vòng đời mới cho bê tông mẫu đã qua sử dụng</h3>
+                            <p>Chúng tôi thu lại, phân loại, chứng nhận và phân phối bê tông mẫu sau kiểm định cho các ứng dụng gia cố mái dốc, bờ kênh, chống xói và nền đất yếu – giảm chi phí và phát thải.</p>
+                            <div class="kpi-row">
+                                <div class="kpi-item">
+                                    <span class="num">500+</span>
+                                    <span class="lbl">Mẫu tái sử dụng</span>
+                                </div>
+                                <div class="kpi-item">
+                                    <span class="num">30%</span>
+                                    <span class="lbl">Tiết kiệm chi phí</span>
+                                </div>
+                                <div class="kpi-item">
+                                    <span class="num">-42%</span>
+                                    <span class="lbl">Giảm CO₂</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Values + Collage -->
+                    <div class="about-aside" data-aos="fade-left">
+                        <div class="values-grid">
+                            <div class="value-card">
+                                <i class="fa-solid fa-leaf"></i>
+                                <h4>Bền vững</h4>
+                                <p>Ưu tiên vật liệu tái sử dụng, đóng góp mục tiêu NET0.</p>
+                            </div>
+                            <div class="value-card">
+                                <i class="fa-solid fa-screwdriver-wrench"></i>
+                                <h4>Kỹ thuật</h4>
+                                <p>Thiết kế & thi công tối ưu, kiểm soát rủi ro.</p>
+                            </div>
+                            <div class="value-card">
+                                <i class="fa-solid fa-coins"></i>
+                                <h4>Hiệu quả</h4>
+                                <p>Giảm chi phí nguyên liệu, tối ưu vận hành.</p>
+                            </div>
+                            <div class="value-card">
+                                <i class="fa-solid fa-certificate"></i>
+                                <h4>Chứng nhận</h4>
+                                <p>Mẫu đã qua kiểm định, truy xuất minh bạch.</p>
+                            </div>
+                        </div>
+
+                        <div class="about-collage">
+                            <div class="col-item large"><img src="../img/4.png" alt="Slope Reinforcement"></div>
+                            <div class="col-item"><img src="../img/1.png" alt="Cylinder Sample"></div>
+                            <div class="col-item"><img src="../img/2.png" alt="Short Cylinder"></div>
+                            <div class="col-item wide"><img src="../img/3.png" alt="Box Sample"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Target Market / Thị trường mục tiêu -->
+        <section class="section target-market">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2>Thị trường mục tiêu</h2>
+                    <p>Hướng đến các dự án lớn và tệp khách hàng tư nhân có nhu cầu</p>
+                </div>
+                <div class="market-showcase">
+                    <div class="market-primary" data-aos="fade-right">
+                        <div class="market-visual">
+                            <img src="../img/4.png" alt="Dự án quy mô lớn">
+                            <div class="overlay-stats">
+                                <div class="stat-badge">
+                                    <span class="stat-value">15+</span>
+                                    <span class="stat-desc">Dự án lớn</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="market-content">
+                            <h3><i class="fa-solid fa-building"></i> Dự án quy mô</h3>
+                            <p>Hợp tác các công trình chống xói, sạt lở, gia cố nền đất với các đơn vị nhà nước và tư nhân lớn.</p>
+                            <ul class="feature-list">
+                                <li><i class="fa-solid fa-check"></i> Công trình hạ tầng giao thông</li>
+                                <li><i class="fa-solid fa-check"></i> Dự án thủy lợi, đê điều</li>
+                                <li><i class="fa-solid fa-check"></i> Khu công nghiệp, khu dân cư</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="market-secondary" data-aos="fade-left">
+                        <div class="market-grid">
+                            <div class="market-card">
+                                <div class="card-icon">
+                                    <i class="fa-solid fa-people-group"></i>
+                                </div>
+                                <h4>Khách hàng tư nhân</h4>
+                                <p>Cung cấp giải pháp thi công tiết kiệm, bền vững cho các dự án nhỏ và vừa.</p>
+                                <div class="card-metric">
+                                    <span class="metric-value">50+</span>
+                                    <span class="metric-label">Khách hàng</span>
+                                </div>
+                            </div>
+                            <div class="market-card">
+                                <div class="card-icon">
+                                    <i class="fa-solid fa-warehouse"></i>
+                                </div>
+                                <h4>Giải quyết tồn kho</h4>
+                                <p>Giảm tải bãi chứa mẫu tại các công trình, tối ưu không gian và chi phí lưu trữ.</p>
+                                <div class="card-metric">
+                                    <span class="metric-value">80%</span>
+                                    <span class="metric-label">Giảm tồn kho</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Segments: Phân khúc khách hàng -->
+                <div class="segments" data-aos="fade-up" data-aos-delay="200">
+                    <div class="segments-grid">
+                        <div class="segment-card">
+                            <div class="segment-icon"><i class="fa-solid fa-landmark"></i></div>
+                            <h4>Khối Nhà nước</h4>
+                            <p>Hạ tầng thủy lợi, đê điều, giao thông – ưu tiên giải pháp xanh và hiệu quả chi phí.</p>
+                            <ul class="segment-points">
+                                <li><i class="fa-solid fa-check"></i> Quy mô lớn</li>
+                                <li><i class="fa-solid fa-check"></i> Yêu cầu tiêu chuẩn</li>
+                            </ul>
+                        </div>
+                        <div class="segment-card">
+                            <div class="segment-icon"><i class="fa-solid fa-helmet-safety"></i></div>
+                            <h4>Nhà thầu tư nhân</h4>
+                            <p>Giải pháp thi công nhanh, giảm chi phí vật liệu, tối ưu tiến độ và logistics.</p>
+                            <ul class="segment-points">
+                                <li><i class="fa-solid fa-check"></i> Linh hoạt</li>
+                                <li><i class="fa-solid fa-check"></i> Tối ưu chi phí</li>
+                            </ul>
+                        </div>
+                        <div class="segment-card">
+                            <div class="segment-icon"><i class="fa-solid fa-people-group"></i></div>
+                            <h4>Cộng đồng địa phương</h4>
+                            <p>Gia cố bờ kênh, mái dốc quy mô nhỏ – thân thiện môi trường, dễ triển khai.</p>
+                            <ul class="segment-points">
+                                <li><i class="fa-solid fa-check"></i> Dễ áp dụng</li>
+                                <li><i class="fa-solid fa-check"></i> Hiệu quả bền vững</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Competitive & Marketing / Phân tích cạnh tranh, marketing -->
+        <section class="section competitive">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2>Phân tích cạnh tranh & Marketing</h2>
+                    <p>Khác biệt hoá bằng giải pháp xanh và hiệu quả chi phí</p>
+                </div>
+                <div class="competitive-showcase">
+                    <div class="competitive-hero" data-aos="fade-up">
+                        <div class="hero-content">
+                            <div class="hero-text">
+                                <h3>Lợi thế cạnh tranh độc đáo</h3>
+                                <p>Chúng tôi là người tiên phong trong việc tái sử dụng bê tông mẫu, tạo ra chuỗi giá trị bền vững chưa từng có trên thị trường.</p>
+                                <div class="advantage-stats">
+                                    <div class="stat-item">
+                                        <span class="stat-number">100%</span>
+                                        <span class="stat-label">Ý tưởng độc quyền</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-number">0</span>
+                                        <span class="stat-label">Đối thủ trực tiếp</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-number">NET0</span>
+                                        <span class="stat-label">Mục tiêu xanh</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hero-visual">
+                                <div class="floating-cards">
+                                    <div class="float-card card-1">
+                                        <i class="fa-solid fa-seedling"></i>
+                                        <span>Xanh bền vững</span>
+                                    </div>
+                                    <div class="float-card card-2">
+                                        <i class="fa-solid fa-lightbulb"></i>
+                                        <span>Đổi mới sáng tạo</span>
+                                    </div>
+                                    <div class="float-card card-3">
+                                        <i class="fa-solid fa-chart-line"></i>
+                                        <span>Hiệu quả kinh tế</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="marketing-strategy" data-aos="fade-up" data-aos-delay="200">
+                        <div class="strategy-grid">
+                            <div class="strategy-card primary">
+                                <div class="card-header">
+                                    <div class="icon-wrapper">
+                                        <i class="fa-solid fa-bullhorn"></i>
+                                    </div>
+                                    <h4>Chiến lược Marketing</h4>
+                                </div>
+                                <div class="strategy-content">
+                                    <p>Truyền thông hướng tới phát triển bền vững và giảm chi phí cho chủ đầu tư</p>
+                                    <div class="strategy-points">
+                                        <div class="point-item">
+                                            <i class="fa-solid fa-check-circle"></i>
+                                            <span>Content marketing về lợi ích môi trường</span>
+                                        </div>
+                                        <div class="point-item">
+                                            <i class="fa-solid fa-check-circle"></i>
+                                            <span>Case studies dự án thành công</span>
+                                        </div>
+                                        <div class="point-item">
+                                            <i class="fa-solid fa-check-circle"></i>
+                                            <span>Partnership với các tổ chức xanh</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="strategy-card">
+                                <div class="card-header">
+                                    <div class="icon-wrapper">
+                                        <i class="fa-solid fa-shield-halved"></i>
+                                    </div>
+                                    <h4>Xây dựng thương hiệu</h4>
+                                </div>
+                                <div class="strategy-content">
+                                    <p>Năng lực tạo chuẩn mực mới trong lĩnh vực gia cố công trình</p>
+                                    <div class="brand-metrics">
+                                        <div class="metric">
+                                            <span class="metric-value">#1</span>
+                                            <span class="metric-label">Pioneer</span>
+                                        </div>
+                                        <div class="metric">
+                                            <span class="metric-value">100%</span>
+                                            <span class="metric-label">Sustainable</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Team / Đội khởi nghiệp -->
+        <section class="section team">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2>Đội khởi nghiệp</h2>
+                    <p>Tinh gọn, đa kỹ năng, tập trung vào hiệu quả triển khai.</p>
+                </div>
+                <div class="info-grid">
+                    <div class="info-card" data-aos="fade-up">
+                        <i class="fa-solid fa-user-tie"></i>
+                        <h3>Vận hành</h3>
+                        <p>Quản trị nguồn mẫu, kho, logistics.</p>
+                    </div>
+                    <div class="info-card" data-aos="fade-up" data-aos-delay="100">
+                        <i class="fa-solid fa-industry"></i>
+                        <h3>Kỹ thuật</h3>
+                        <p>Thiết kế, kiểm tra, tối ưu giải pháp thi công.</p>
+                    </div>
+                    <div class="info-card" data-aos="fade-up" data-aos-delay="200">
+                        <i class="fa-solid fa-chart-pie"></i>
+                        <h3>Kinh doanh</h3>
+                        <p>Phát triển đối tác, marketing và bán hàng.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+
+        <!-- Case Studies / Dự án đã triển khai -->
+        <section class="section cases">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2>Dự án đã triển khai</h2>
+                    <p>Một số ví dụ minh hoạ về ứng dụng bê tông mẫu tái sử dụng.</p>
+                </div>
+                <div class="cases-grid">
+                    <div class="case-card" data-aos="fade-up">
+                        <div class="case-thumb"><img src="../img/4.png" alt="Gia cố mái dốc"></div>
+                        <div class="case-body">
+                            <h3>Gia cố mái dốc</h3>
+                            <p>Bố trí trụ dài theo ma trận tam giác, tăng ổn định mái dốc.</p>
+                            <ul class="case-meta">
+                                <li><i class="fa-solid fa-location-dot"></i> Tây Nguyên</li>
+                                <li><i class="fa-solid fa-leaf"></i> Giảm vật liệu mới</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="case-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="case-thumb"><img src="../img/5.png" alt="Chống xói bờ kênh"></div>
+                        <div class="case-body">
+                            <h3>Chống xói bờ kênh</h3>
+                            <p>Khối hộp và trụ ngắn tạo bề mặt thô, giảm vận tốc dòng chảy.</p>
+                            <ul class="case-meta">
+                                <li><i class="fa-solid fa-location-dot"></i> ĐBSCL</li>
+                                <li><i class="fa-solid fa-water"></i> Kiểm soát xói mòn</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="case-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="case-thumb"><img src="../img/6.jpg" alt="Gia cố nền đất yếu"></div>
+                        <div class="case-body">
+                            <h3>Gia cố nền đất yếu</h3>
+                            <p>Bố trí module dày đặc tăng cường sức chịu tải nền.</p>
+                            <ul class="case-meta">
+                                <li><i class="fa-solid fa-location-dot"></i> Miền Trung</li>
+                                <li><i class="fa-solid fa-recycle"></i> Tái sử dụng mẫu</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ / Câu hỏi thường gặp -->
+        <section class="section faq">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2>FAQ — Câu hỏi thường gặp</h2>
+                    <p>Phân nhóm theo chủ đề: chất lượng, vận chuyển, môi trường, kỹ thuật.</p>
+                </div>
+                <div class="faq-grid">
+                    <!-- Col 1 -->
+                    <div class="faq-col" data-aos="fade-right">
+                        <div class="faq-group">
+                            <div class="faq-group-head">
+                                <i class="fa-solid fa-shield"></i>
+                                <h3>Chất lượng & Chứng nhận</h3>
+                            </div>
+                            <div class="faq-accordion">
+                                <details open>
+                                    <summary>
+                                        <span class="q"><span class="num">01</span>Bê tông mẫu có đảm bảo chất lượng không?</span>
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                    </summary>
+                                    <div class="answer">Mỗi mẫu đều đã qua kiểm định theo tiêu chuẩn (TCVN/ASTM), lưu vết chứng nhận và được kiểm tra lại trước khi cung ứng.</div>
+                                </details>
+                                <details>
+                                    <summary>
+                                        <span class="q"><span class="num">02</span>Chứng chỉ được cung cấp kèm như thế nào?</span>
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                    </summary>
+                                    <div class="answer">Cung cấp bản scan/serial chứng chỉ cùng batch; thông tin kho, ngày nhập và kết quả nén.</div>
+                                </details>
+                            </div>
+                        </div>
+
+                        <div class="faq-group">
+                            <div class="faq-group-head">
+                                <i class="fa-solid fa-truck-fast"></i>
+                                <h3>Vận chuyển & Logistics</h3>
+                            </div>
+                            <div class="faq-accordion">
+                                <details>
+                                    <summary>
+                                        <span class="q"><span class="num">03</span>Chi phí vận chuyển xử lý ra sao?</span>
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                    </summary>
+                                    <div class="answer">Tối ưu theo vị trí kho/khu vực dự án, ghép chuyến và chọn tuyến chi phí thấp nhất; báo giá minh bạch.</div>
+                                </details>
+                                <details>
+                                    <summary>
+                                        <span class="q"><span class="num">04</span>Thời gian giao hàng dự kiến?</span>
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                    </summary>
+                                    <div class="answer">Thông thường 24–72 giờ nội vùng; liên vùng tùy lộ trình, sẽ xác nhận khi chốt đơn.</div>
+                                </details>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Col 2 -->
+                    <div class="faq-col" data-aos="fade-left">
+                        <div class="faq-group">
+                            <div class="faq-group-head">
+                                <i class="fa-solid fa-leaf"></i>
+                                <h3>Môi trường & Bền vững</h3>
+                            </div>
+                            <div class="faq-accordion">
+                                <details>
+                                    <summary>
+                                        <span class="q"><span class="num">05</span>Lợi ích môi trường cụ thể là gì?</span>
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                    </summary>
+                                    <div class="answer">Giảm khai thác vật liệu mới, giảm chất thải xây dựng tồn lưu, hỗ trợ mục tiêu NET0 và kinh tế tuần hoàn.</div>
+                                </details>
+                                <details>
+                                    <summary>
+                                        <span class="q"><span class="num">06</span>Đo lường CO₂ giảm thải như thế nào?</span>
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                    </summary>
+                                    <div class="answer">Ước tính theo chuẩn phát thải phạm vi vật liệu, so sánh với kịch bản dùng vật liệu mới.</div>
+                                </details>
+                            </div>
+                        </div>
+
+                        <div class="faq-group">
+                            <div class="faq-group-head">
+                                <i class="fa-solid fa-screwdriver-wrench"></i>
+                                <h3>Kỹ thuật & Thi công</h3>
+                            </div>
+                            <div class="faq-accordion">
+                                <details>
+                                    <summary>
+                                        <span class="q"><span class="num">07</span>Có hỗ trợ thiết kế/thi công không?</span>
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                    </summary>
+                                    <div class="answer">Có. Chúng tôi tư vấn thiết kế, lập biện pháp và hỗ trợ thi công với đội ngũ kỹ sư nhiều kinh nghiệm.</div>
+                                </details>
+                                <details>
+                                    <summary>
+                                        <span class="q"><span class="num">08</span>Kích thước/kiểu mẫu phù hợp từng hạng mục?</span>
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                    </summary>
+                                    <div class="answer">Trụ dài cho mái dốc; trụ ngắn/khối hộp cho bờ kênh, nền yếu. Chúng tôi sẽ đề xuất cấu hình tối ưu.</div>
+                                </details>
+                            </div>
+                        </div>
+
+                        <div class="faq-cta">
+                            <div class="faq-cta-card">
+                                <h4>Chưa thấy câu hỏi của bạn?</h4>
+                                <p>Liên hệ để được tư vấn chi tiết cho trường hợp cụ thể của công trình.</p>
+                                <a class="btn secondary" href="#lien-he"><i class="fa-solid fa-message"></i> Hỏi chuyên gia</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2><i class="fa-solid fa-leaf"></i> Cùng xây dựng tương lai bền vững</h2>
+                    <p>Tham gia cuộc cách mạng tái chế vật liệu xây dựng, hướng tới kinh doanh bền vững và bảo vệ môi trường</p>
+                    <div class="cta-actions">
+                        <a class="btn primary large" href="./inventory.html">
+                            <i class="fa-solid fa-warehouse"></i> Xem kho hàng
+                        </a>
+                        <a class="btn secondary large" href="#lien-he">
+                            <i class="fa-solid fa-phone"></i> Liên hệ tư vấn
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="lien-he" class="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Liên hệ với chúng tôi</h2>
+                    <p>Chúng tôi sẵn sàng hỗ trợ và tư vấn cho dự án của bạn</p>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+                            <div>
+                                <h4>Đại diện</h4>
+                                <p>Nguyễn Hương Lan</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>contact@reconcrete.vn</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4>Điện thoại</h4>
+                                <p>09xx xxx xxx</p>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="contact-form" onsubmit="event.preventDefault(); alert('Cảm ơn bạn! Chúng tôi sẽ liên hệ sớm nhất.');">
+                        <div class="form-group">
+                            <input type="text" placeholder="Họ và tên" required />
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email" required />
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Số điện thoại" />
+                        </div>
+                        <div class="form-group">
+                            <textarea rows="4" placeholder="Nội dung yêu cầu tư vấn"></textarea>
+                        </div>
+                        <button class="btn primary large" type="submit">
+                            <i class="fa-solid fa-paper-plane"></i> Gửi yêu cầu
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>© 2025 ReConcrete. Tái sử dụng bê tông mẫu cho công trình xanh.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="./assets/js/data.js"></script>
+    <script src="./assets/js/app.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1200,
+            once: true,
+            offset: 100,
+            easing: 'ease-out-cubic'
+        });
+
+        // Initialize Particles.js
+        particlesJS('particles-js', {
+            particles: {
+                number: { value: 60, density: { enable: true, value_area: 800 } },
+                color: { value: '#059669' }, // Green theme for sustainability
+                shape: { type: 'circle' },
+                opacity: { value: 0.3, random: false },
+                size: { value: 2, random: true },
+                line_linked: { enable: true, distance: 150, color: '#059669', opacity: 0.2, width: 1 }, // Green theme
+                move: { enable: true, speed: 1.5, direction: 'none', random: false, straight: false, out_mode: 'out', bounce: false }
+            },
+            interactivity: {
+                detect_on: 'canvas',
+                events: { onhover: { enable: true, mode: 'repulse' }, onclick: { enable: true, mode: 'push' }, resize: true },
+                modes: { grab: { distance: 400, line_linked: { opacity: 1 } }, bubble: { distance: 400, size: 40, duration: 2, opacity: 8, speed: 3 }, repulse: { distance: 200, duration: 0.4 }, push: { particles_nb: 4 }, remove: { particles_nb: 2 } }
+            },
+            retina_detect: true
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('.site-header');
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Add hover effects to service cards
+        document.querySelectorAll('.service-card').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.transform = 'translateY(-16px) scale(1.03) perspective(1000px) rotateX(-5deg)';
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'translateY(0) scale(1) perspective(1000px) rotateX(0deg)';
+            });
+        });
+
+        // Add click ripple effect to buttons
+        document.querySelectorAll('.btn').forEach(button => {
+            button.addEventListener('click', function(e) {
+                const ripple = document.createElement('span');
+                const rect = this.getBoundingClientRect();
+                const size = Math.max(rect.width, rect.height);
+                const x = e.clientX - rect.left - size / 2;
+                const y = e.clientY - rect.top - size / 2;
+                
+                ripple.style.width = ripple.style.height = size + 'px';
+                ripple.style.left = x + 'px';
+                ripple.style.top = y + 'px';
+                ripple.classList.add('ripple');
+                
+                this.appendChild(ripple);
+                
+                setTimeout(() => {
+                    ripple.remove();
+                }, 600);
+            });
+        });
+
+        // Counter animation
+        function animateCounters() {
+            const counters = document.querySelectorAll('[data-count]');
+            counters.forEach(counter => {
+                const target = parseInt(counter.getAttribute('data-count'));
+                const duration = 2000;
+                const increment = target / (duration / 16);
+                let current = 0;
+                
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= target) {
+                        current = target;
+                        clearInterval(timer);
+                    }
+                    counter.textContent = Math.floor(current) + '+';
+                }, 16);
+            });
+        }
+
+        // Trigger counter animation when stats come into view
+        const statsSection = document.querySelector('.hero-stats');
+        if (statsSection) {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        animateCounters();
+                        observer.unobserve(entry.target);
+                    }
+                });
+            });
+            observer.observe(statsSection);
+        }
+
+        // Mobile menu toggle
+        function toggleMobileMenu() {
+            const menu = document.querySelector('.menu');
+            const toggle = document.querySelector('.menu-toggle');
+            menu.classList.toggle('active');
+            toggle.classList.toggle('active');
+        }
+
+        // Close mobile menu when clicking on links
+        document.querySelectorAll('.menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                const menu = document.querySelector('.menu');
+                const toggle = document.querySelector('.menu-toggle');
+                menu.classList.remove('active');
+                toggle.classList.remove('active');
+            });
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            const menu = document.querySelector('.menu');
+            const toggle = document.querySelector('.menu-toggle');
+            if (!menu.contains(e.target) && !toggle.contains(e.target)) {
+                menu.classList.remove('active');
+                toggle.classList.remove('active');
+            }
+        });
+
+        // Scroll spy for header menu (activate link when section in view)
+        (function initScrollSpy(){
+            const navLinks = Array.from(document.querySelectorAll('.menu a[href^="#"]'));
+            if (!navLinks.length) return;
+            const linkById = new Map();
+            const sections = navLinks
+                .map(link => {
+                    const id = link.getAttribute('href');
+                    const sec = document.querySelector(id);
+                    if (sec) linkById.set(sec.id, link);
+                    return sec;
+                })
+                .filter(Boolean);
+
+            function setActive(id){
+                navLinks.forEach(a => a.classList.remove('active'));
+                const l = linkById.get(id);
+                if (l) l.classList.add('active');
+            }
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        setActive(entry.target.id);
+                    }
+                });
+            }, { root: null, rootMargin: '0px 0px -60% 0px', threshold: 0.25 });
+
+            sections.forEach(sec => observer.observe(sec));
+        })();
+
+        window.initHome && window.initHome();
+    </script>
+</body>
+</html>
+
+
