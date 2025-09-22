@@ -10,7 +10,7 @@
       id: 'sp-long-001', type: 'sample', shape: 'trụ dài', name: 'Trụ dài D150x300',
       specs: { diameter_mm: 150, length_mm: 300 },
       description: 'Mẫu trụ dài dùng cho gia cố mái dốc, bờ kênh.',
-      certificate: 'TCVN/ASTM Compressive Strength Certified',
+      certificate: 'TCVN',
       inventory: [
         { warehouseId: 'wh-hcm', quantity: 120 },
         { warehouseId: 'wh-dn', quantity: 40 }
@@ -20,17 +20,17 @@
       id: 'sp-short-002', type: 'sample', shape: 'trụ ngắn', name: 'Trụ ngắn D100x150',
       specs: { diameter_mm: 100, length_mm: 150 },
       description: 'Mẫu trụ ngắn phù hợp lót nền chống xói.',
-      certificate: 'TCVN Compression Report',
+      certificate: 'TCVN',
       inventory: [
         { warehouseId: 'wh-hcm', quantity: 300 },
         { warehouseId: 'wh-hn', quantity: 150 }
       ]
     },
     {
-      id: 'sp-box-003', type: 'sample', shape: 'hình hộp', name: 'Khối hộp 150x150x300',
+      id: 'sp-box-003', type: 'sample', shape: 'hình hộp', name: 'Khối hộp 150x150x150',
       specs: { width_mm: 150, height_mm: 150, length_mm: 300 },
       description: 'Khối hộp cho gia cố nền tại bờ kè.',
-      certificate: 'ISO Aggregate Reuse Report',
+      certificate: 'TCVN',
       inventory: [
         { warehouseId: 'wh-dn', quantity: 80 },
         { warehouseId: 'wh-hn', quantity: 50 }
